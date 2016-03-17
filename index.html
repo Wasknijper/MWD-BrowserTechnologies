@@ -209,12 +209,40 @@
       <h4>Code</h4>
       <h5>HTML</h5>
       <pre><code>
-      &lt;
+      &lt;p>Hoe schrijf je twee milijoen dertienhonderd drieënveertig euro en 30 cent in nummers? &lt;span id="euros">&lt;/span>&lt;/p>
       </code></pre>
 
       <h5>JS</h5>
       <pre><code>
+       
+      var num = 2001343.30;
+      var formatted;
+      var euroSpan = document.getElementById('euros');
+
+      var formatToEuro = function (number){
+        var numberStr = parseFloat(number).toFixed(2).toString();
+        var numFormatDec = numberStr.slice(-2); /*decimal 00*/
+        numberStr = numberStr.substring(0, numberStr.length-3); /*cut last 3 strings*/
+        var numFormat = new Array;
+        while (numberStr.length > 3) {
+          numFormat.unshift(numberStr.slice(-3));
+          numberStr = numberStr.substring(0, numberStr.length-3);
+        }
+          numFormat.unshift(numberStr);
+          return '\u20AC ' + numFormat.join('.')+','+numFormatDec; /*format 000.000.000,00 */
+      }
+
+      if(Intl.NumberFormat){
+
+        var i10nEUR = new Intl.NumberFormat("nl-NL", { style: "currency", currency: "EUR" })
+        formatted = i10nEUR.format(num);
+      } else {
+        formatted = formatToEuro(num);
+      }
       
+      euroSpan.innerHTML = formatted;
+
+      console.log(formatted); 
       </code></pre>
 
       <h4>Demo</h4>
@@ -265,6 +293,7 @@
       var formatted;
       var euroSpan = document.getElementById('euros');
 
+      //fallback functie komt van: http://www.naprej.com/format_currency_euro_in_javascript_
       var formatToEuro = function (number){
         var numberStr = parseFloat(number).toFixed(2).toString();
         var numFormatDec = numberStr.slice(-2); /*decimal 00*/
