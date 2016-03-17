@@ -1,0 +1,38 @@
+<!doctype html>
+
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width">
+	    <link rel="stylesheet" href="style.css">
+	    <title>LocalStorage Degration Demo</title>
+	</head>
+	<body>	
+		<header>
+			<h1>Localstorage Gracefull Degration</h1>
+		</header>
+		<section id="websites">
+			<div class="wrapper">
+				<h2> Add to favorites or pass: </h2>
+				<p id="loading">Loading the list of most popular websites</p>
+				<ul id="list">
+
+				</ul>
+				<button type="button" id="add">Add to favorites</button>
+				<button type="button" id="next">Show me the next site</button>
+			</div>
+		</section>
+
+		<section id="favorites">
+			<h2> Favorites </h2>
+			<p id="message">Your browser doesnt support local storage! Be sure to copy the list or download it before you leave.</p>
+			<a id='download' class="hidden" href="#download">Download list</a>
+			<textarea rows="4" cols="50" class="hidden" id="field"> </textarea>
+			<ul id="fav-list">
+
+			</ul>
+		</section>
+	</body>
+
+
+	<script src="app.js"></script>
+</html>

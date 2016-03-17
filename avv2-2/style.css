@@ -1,0 +1,62 @@
+body {
+	display: flex;
+	flex-flow: row wrap;
+	background-color: #FC0;
+	font-family: sans-serif;
+}
+
+header{
+	width: 100%;
+}
+
+a {
+	display: inline-block;
+	opacity: 1;
+	height: auto;
+    transition: all .3s ease .15s;
+}
+
+p, #list {
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+#list {
+	padding-left: 1em;
+	list-style: none;
+}
+
+button {
+	margin-top: 1em;
+	cursor: pointer;
+}
+
+.hidden {
+	opacity:0;
+    height: 0;
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li{
+	padding-right: 2em;
+}
+
+body > section:not(#websites), .wrapper {
+	background-color: white;
+	padding: 1.5em;
+}
+
+#websites {
+	flex: 1;
+	margin-right: 15%;
+}
+
+#favorites {
+	width: 30em;
+}
