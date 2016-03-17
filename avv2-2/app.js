@@ -155,6 +155,10 @@ var app = (function(){
 			if(_lsExists){
 				saving.getItem();
 				_lsMessage.innerHTML = 'Your browser supports localstorage! You can leave this page and comback and your favourites will be intact.';	
+			} else {
+				window.onbeforeunload = function() {
+          			return "Als je weg gaat verdwijnen je favorieten! Weet je zeker dat je ze hebt gekopieeërd of gedownload?"
+      			}
 			}
 
 			if(window.Blob===undefined){
