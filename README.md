@@ -7,8 +7,8 @@ https://github.com/Wasknijper/MWD-Funda-Project1/tree/browser-technologies#brows
 http://wasknijper.github.io/MWD-BrowserTechnologies/
 
 ##AVV 2-2
-bekijk demo: http://wasknijper.github.io/MWD-BrowserTechnologies/avv2-2
-bekijk js: https://github.com/Wasknijper/MWD-BrowserTechnologies/blob/gh-pages/avv2-2/app.js
+- bekijk demo: http://wasknijper.github.io/MWD-BrowserTechnologies/avv2-2
+- bekijk js: https://github.com/Wasknijper/MWD-BrowserTechnologies/blob/gh-pages/avv2-2/app.js
 
 Voor opdracht 2 van week 2 heb ik localstorage als een enhancement uitgewerkt, ook heb ik Blob toegepast en daar een fallback voor gemaakt.
 
