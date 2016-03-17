@@ -307,7 +307,7 @@
           return '\u20AC ' + numFormat.join('.')+','+numFormatDec; /*format 000.000.000,00 */
       }
 
-      if(Intl.NumberFormat){
+      if(window.Intl && window.Intl === "object"){
 
         var i10nEUR = new Intl.NumberFormat("nl-NL", { style: "currency", currency: "EUR" })
         formatted = i10nEUR.format(num);
