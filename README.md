@@ -17,6 +17,7 @@ Blob werkt niet of slecht in de volgende browsers: IE 9 of lager, FireFox 12 of 
 
 De belangrijkste functie van localStorage is, voordeze app, het bewaren van je lijst met favorieten. Daarom heb ik de mogelijkheid toegevoegt om de lijst de downloaden als .txt. 
 
-De fallback voor de Blob die het .txt bestand maakt is een <textarea> waarin dezelfde informatie staat als in het .txt bestand.
+De tekstjes aangepast aan de hand van welke features gesupport worden of niet. Wanneer de gebruiker geen localStorage heeft krijgt hij/zij ook een popup als ze het venster willen sluiten. Hierdoor kan de gebruiker minder makelijk vergeten om zijn data op te slaan.
 
-Verder worden de tekstjes aangepast aan de hand van welke features gesupport worden of niet. Wanneer de gebruiker geen localStorage heeft krijgt hij/zij ook een popup als ze het venster willen sluiten. Hierdoor kan de gebruiker minder makelijk vergeten om zijn data op te slaan.
+De fallback voor de Blob die het .txt bestand maakt is een <textarea> waarin dezelfde informatie staat als in het .txt bestand. 
+
