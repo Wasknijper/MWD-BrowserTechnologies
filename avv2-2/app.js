@@ -100,7 +100,7 @@ var app = (function(){
 
 	var saving = {
 		isAvailable : function(){
-			if(window.localBStorage!==undefined){
+			if(window.localStorage!==undefined){
 				_lsExists = true;
 			} else {
 				_lsExists = false;
@@ -117,7 +117,7 @@ var app = (function(){
 		},
 		getItem : function(){
 			//no need to check _lsExists, cause it will return false if localstorage doesnt exist
-			if(localBStorage.favList){
+			if(localStorage.favList){
 				var obj = JSON.parse(localStorage.favList);
 				console.log(obj);
 				_favs = obj.favs;
@@ -127,7 +127,7 @@ var app = (function(){
 		},
 		download : function(){
 			//check if the browser supports blob, so the user can download the file
-			if(window.FBlob!==undefined){
+			if(window.Blob!==undefined){
 				//
 				return function(){
 					var file = _prettifyJSON(_favs, true);
@@ -161,7 +161,7 @@ var app = (function(){
       			}
 			}
 
-			if(window.FBlob===undefined){
+			if(window.Blob===undefined){
 				_field.classList.remove('hidden');
 				_lsMessage.innerHTML += '<br/> Your browser doesnt support blob, instead you can copy your list from here:';
 			} else {
