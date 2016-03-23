@@ -1,0 +1,139 @@
+body{
+	float: left;
+	font-family: sans-serif;
+	background-color: #d53141;
+	color: white;
+}
+
+@keyframes add {
+    from {
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+
+    to {
+    	opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	border: solid 0.5em #831010;
+	text-align: center;
+	margin-right: 0.4em;
+    transition: color, background-color 500ms;
+    background-color: white;
+	background-color: rgba(255, 255, 255, 0);
+	animation: add 0.5s normal forwards ease-in-out;
+}
+
+a:hover{
+	color: #831010;
+    background-color: white;
+	background-color: rgba(255, 255, 255, 1);
+}
+
+a.added{
+	border-color: #ee4143
+}
+
+a img {
+	text-align: center;
+}
+
+
+#pokemon, #drag-drop{
+	color: black;
+	padding: 1em;
+	box-sizing: border-box;
+	height: 500px;
+	height: 80vh;
+	overflow: auto;
+	border: solid 0.5em #831010;
+    transition: all 500ms;
+    background-color: white;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+#pokemon:hover, #drag-drop:hover{
+    background-color: grey;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+#pokemon section {
+	box-sizing: border-box;
+	width: 15em;
+	float: left;
+	padding: 0 1.5em 0 1em;
+}
+
+.hidden {
+	display: none;
+}
+
+#pokemon {
+	text-align: center;
+}
+
+#drag-drop {
+	min-width: 22em;
+	max-width: 39em;
+	float: right;
+	display: inline-block;
+	margin: 0 2em;
+	border-color: #ee4143
+}
+
+h2{
+	text-align: left;
+	margin-top: 0;
+}
+
+#pokemon, #slots {
+    transition: background-color 500ms;
+}
+
+#slots {
+	padding: 1em;
+}
+
+#slots.active{
+	min-height: 300px;
+	width: 90%;
+	background-color: blue;
+}
+
+#pokemon.active{
+	background-color:red;
+}
+
+#slots.active:before{
+	content:'Drop here to add to team!';
+	margin-bottom: 0.4em;
+}
+
+#pokemon.active:before{
+	content:'Drop here to remove from team!';
+}
+
+.active:before{
+	display: block;
+	font-size: 2em;
+	color: white;
+}
+
+.added {
+	margin-left: 1em;
+	margin-bottom: 1em;
+	width: 15em;
+	min-height: 13.75em;
+	background-color: #ded6d6;
+	float: left;
+	display: block;
+	padding: 0 1.5em 0 1em;
+	box-sizing: border-box;
+
+}
