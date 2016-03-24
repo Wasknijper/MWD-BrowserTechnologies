@@ -21,3 +21,7 @@ De tekstjes aangepast aan de hand van welke features gesupport worden of niet. W
 
 De fallback voor de Blob die het .txt bestand maakt is een <textarea> waarin dezelfde informatie staat als in het .txt bestand. 
 
+##AVV 3
+![Drag and drop support](drag-drop-img.png)
+
+Drag and drop supported:
