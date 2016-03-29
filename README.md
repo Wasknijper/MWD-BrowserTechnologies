@@ -19,9 +19,4 @@ De belangrijkste functie van localStorage is, voordeze app, het bewaren van je l
 
 De tekstjes aangepast aan de hand van welke features gesupport worden of niet. Wanneer de gebruiker geen localStorage heeft krijgt hij/zij ook een popup als ze het venster willen sluiten. Hierdoor kan de gebruiker minder makelijk vergeten om zijn data op te slaan.
 
-De fallback voor de Blob die het .txt bestand maakt is een <textarea> waarin dezelfde informatie staat als in het .txt bestand. 
-
-##AVV 3
-![Drag and drop support](drag-drop-img.png)
-
-Drag and drop supported:
+De fallback voor de Blob die het .txt bestand maakt is een <textarea> waarin dezelfde informatie staat als in het .txt bestand.
